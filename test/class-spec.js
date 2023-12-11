@@ -9,7 +9,7 @@ describe("Word", function () {
   });
   describe("Word constructor function", function () {
     it('should have a "word" property', function () {
-      expect(newWord.word).exist;
+      expect(newWord).to.have.key("word");
     });
 
     it('should set the "word" property when a new word is created', function () {
